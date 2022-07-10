@@ -10,6 +10,7 @@
 
 - Have gcc and g++ installed on the system,
 - Have jdk and jre installed on the system,
+- Have nodejs and npm installed on the system,
 - Make sure `JAVA_HOME` is set correctly in your system
 
 ## Troubleshoot
