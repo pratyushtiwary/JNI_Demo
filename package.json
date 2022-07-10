@@ -1,0 +1,15 @@
+{
+  "name": "BD Assignment",
+  "version": "1.0.0",
+  "description": "Utility to build and run scripts",
+  "scripts": {
+    "build:java": "javac -h . Test.java -target 1.8 -source 1.8",
+    "build:test": "npm run build:java && g++ -I\"%JAVA_HOME%/include\" -I\"%JAVA_HOME%/include/win32\" CalcUtils.test.cpp -o CalcUtils.test.exe",
+    "test": "npm run build:test && CalcUtils.test.exe",
+    "build": "npm run build:java && gcc -I\"%JAVA_HOME%/include\" -I\"%JAVA_HOME%/include/win32\" -shared -o CalcUtils.dll CalcUtils.cpp",
+    "start": "java Test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
