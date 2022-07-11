@@ -9,5 +9,11 @@ jint getFactorial(jint n){
     if(n == 0){
         return 1;
     }
-    return n * getFactorial(n - 1);
+    
+    jint fact = 1;
+    
+    for(jint i=1;i<=n;i++){
+        fact *= i;
+    }
+    return fact;
 }
